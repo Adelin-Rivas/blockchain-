@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/locations.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+      <!-- Navigation Bar -->
+      <div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><img class="icons" src="./images/bitcoin-icon.png" alt="chef icons",height="40" width="40"></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="locations.html">Exchange Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculator.html">Blockchain Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutBlockchain.html">About Blockchain</a>
+        </li>
+        </ul>
+      </div>
+      <!----------------->
+
+    <div class="text-after-nav text-center">
+        <h1 style="color:rgb(162, 180, 94)">ABOUT BLOCKCHAIN</h1>
+        <p style="font-size: 14pt">History</p>
+        <hr>
+
+        <p  >The first blockchain was conceptualized by a person (or group of people) known as
+            Satoshi Nakamoto in 2008. Nakamoto improved the design in an important way using a Hashcash-like method to
+            add blocks to the chain without requiring them to be signed by a trusted party. The design was implemented
+            the following year by Nakamoto as a core component of the cryptocurrency bitcoin, where it serves as the
+            public ledger for all transactions on the network. In August 2014, the bitcoin blockchain file size,
+            containing records of all transactions that have occurred on the network, reached 20 GB (gigabytes).In
+            January 2015, the size had grown to almost 30 GB, and from January 2016 to January 2017, the bitcoin
+            blockchain grew from 50 GB to 100 GB in size. The words block and chain were used separately in Satoshi
+            Nakamoto's original paper, but were eventually popularized as a single word, blockchain, by 2016. The term
+            blockchain 2.0 refers to new applications of the distributed blockchain database, first emerging in 2014.
+            The Economist described one implementation of this second-generation programmable blockchain as coming with
+            "a programming language that allows users to write more sophisticated smart contracts, thus creating
+            invoices that pay themselves when a shipment arrives or share certificates which automatically send their
+            owners dividends if profits reach a certain level." As of 2016, blockchain 2.0 implementations continue to
+            require an off-chain oracle to access any "external data or events based on time or market conditions to
+            interact with the blockchain." IBM opened a blockchain innovation research center in Singapore in July
+            2016. A working group for the World Economic Forum met in November 2016 to discuss the development of
+            governance models related to blockchain. According to Accenture, an application of the diffusion of
+            innovations theory suggests that blockchains attained a 13.5% adoption rate within financial services in
+            2016, therefore reaching the early adopters phase.Industry trade groups joined to create the Global
+            Blockchain Forum in 2016, an initiative of the Chamber of Digital Commerce.</p>
+
+        <hr>
+
+        <p style="font-size: 14pt">Structure</p>
+        <hr>
+
+        <p  > A blockchain is a decentralized, distributed and public digital ledger that is
+            used to record transactions across many computers so that any involved record cannot be altered
+            retroactively, without the alteration of all subsequent blocks.This allows the participants to verify and
+            audit transactions independently and relatively inexpensively. A blockchain database is managed
+            autonomously using a peer-to-peer network and a distributed timestamping server. They are authenticated by
+            mass collaboration powered by collective self-interests. Such a design facilitates robust workflow where
+            participants' uncertainty regarding data security is marginal. The use of a blockchain removes the
+            characteristic of infinite reproducibility from a digital asset. It confirms that each unit of value was
+            transferred only once, solving the long-standing problem of double spending. A blockchain has been
+            described as a value-exchange protocol. This blockchain-based exchange of value can be completed quicker,
+            safer and cheaper than with traditional systems. A blockchain can maintain title rights because, when
+            properly set up to detail the exchange agreement, it provides a record that compels offer and acceptance.</p>
+
+        <p style="font-size: 14pt">Blocks</p>
+        <hr>
+
+        <p  > Blocks hold batches of valid transactions that are hashed and encoded into a
+            Merkle tree. Each block includes the cryptographic hash of the prior block in the blockchain, linking the
+            two. The linked blocks form a chain. This iterative process confirms the integrity of the previous block,
+            all the way back to the original genesis block.
+            Sometimes separate blocks can be produced concurrently, creating a temporary fork. In addition to a secure
+            hash-based history, any blockchain has a specified algorithm for scoring different versions of the history
+            so that one with a higher value can be selected over others. Blocks not selected for inclusion in the chain
+            are called orphan blocks. Peers supporting the database have different versions of the history from time to
+            time. They keep only the highest-scoring version of the database known to them. Whenever a peer receives a
+            higher-scoring version (usually the old version with a single new block added) they extend or overwrite
+            their own database and retransmit the improvement to their peers. There is never an absolute guarantee that
+            any particular entry will remain in the best version of the history forever. Blockchains are typically
+            built to add the score of new blocks onto old blocks and are given incentives to extend with new blocks
+            rather than overwrite old blocks. Therefore, the probability of an entry becoming superseded decreases
+            exponentially[25] as more blocks are built on top of it, eventually becoming very low. For example, in a
+            blockchain using the proof-of-work system, the chain with the most cumulative proof-of-work is always
+            considered the valid one by the network. There are a number of methods that can be used to demonstrate a
+            sufficient level of computation. Within a blockchain the computation is carried out redundantly rather than
+            in the traditional segregated and parallel manner.</p>
+        <hr>
+        <p style="font-size: 14pt">Block Time</p>
+        <hr>
+
+        <p  >The block time is the average time it takes for the network to generate one extra
+            block in the blockchain. Some blockchains create a new block as frequently as every five seconds. By the
+            time of block completion, the included data becomes verifiable. In cryptocurrency, this is practically when
+            the transaction takes place, so a shorter block time means faster transactions. The block time for Ethereum
+            is set to between 14 and 15 seconds, while for bitcoin it is 10 minutes.</p>
+        <hr>
+        <p style="font-size: 14pt">Hard forks</p>
+        <hr>
+
+        <p  >A hard fork is a rule change such that the software validating according to the old
+            rules will see the blocks produced according to the new rules as invalid. In case of a hard fork, all nodes
+            meant to work in accordance with the new rules need to upgrade their software. If one group of nodes
+            continues to use the old software while the other nodes use the new software, a split can occur. For
+            example, Ethereum has hard-forked to "make whole" the investors in The DAO, which had been hacked by
+            exploiting a vulnerability in its code. In this case, the fork resulted in a split creating Ethereum and
+            Ethereum Classic chains. In 2014 the Nxt community was asked to consider a hard fork that would have led to
+            a rollback of the blockchain records to mitigate the effects of a theft of 50 million NXT from a major
+            cryptocurrency exchange. The hard fork proposal was rejected, and some of the funds were recovered after
+            negotiations and ransom payment.
+
+            Alternatively, to prevent a permanent split, a majority of nodes using the new software may return to the
+            old rules, as was the case of bitcoin split on 12 March 2013.</p>
+        <hr>
+        <p style="font-size: 14pt">Decentralization</p>
+        <hr>
+
+        <p  >By storing data across its peer-to-peer network, the blockchain eliminates a number
+            of risks that come with data being held centrally.The decentralized blockchain may use ad-hoc message
+            passing and distributed networking.
+
+            Peer-to-peer blockchain networks lack centralized points of vulnerability that computer crackers can
+            exploit; likewise, it has no central point of failure. Blockchain security methods include the use of
+            public-key cryptography.A public key (a long, random-looking string of numbers) is an address on the
+            blockchain. Value tokens sent across the network are recorded as belonging to that address. A private key
+            is like a password that gives its owner access to their digital assets or the means to otherwise interact
+            with the various capabilities that blockchains now support. Data stored on the blockchain is generally
+            considered incorruptible.
+
+            Every node in a decentralized system has a copy of the blockchain. Data quality is maintained by massive
+            database replication and computational trust. No centralized "official" copy exists and no user is
+            "trusted" more than any other. Transactions are broadcast to the network using software. Messages are
+            delivered on a best-effort basis. Mining nodes validate transactions, add them to the block they are
+            building, and then broadcast the completed block to other nodes.Blockchains use various time-stamping
+            schemes, such as proof-of-work, to serialize changes. Alternative consensus methods include proof-of-stake.
+            Growth of a decentralized blockchain is accompanied by the risk of centralization because the computer
+            resources required to process larger amounts of data become more expensive.</p>
+        <hr>
+        <p style="font-size: 14pt">Openess</p>
+        <hr>
+
+        <p  >Open blockchains are more user-friendly than some traditional ownership records,
+            which, while open to the public, still require physical access to view. Because all early blockchains were
+            permissionless, controversy has arisen over the blockchain definition. An issue in this ongoing debate is
+            whether a private system with verifiers tasked and authorized (permissioned) by a central authority should
+            be considered a blockchain.Proponents of permissioned or private chains argue that the term "blockchain"
+            may be applied to any data structure that batches data into time-stamped blocks. These blockchains serve as
+            a distributed version of multiversion concurrency control (MVCC) in databases. Just as MVCC prevents two
+            transactions from concurrently modifying a single object in a database, blockchains prevent two
+            transactions from spending the same single output in a blockchain.Opponents say that permissioned systems
+            resemble traditional corporate databases, not supporting decentralized data verification, and that such
+            systems are not hardened against operator tampering and revision. Nikolai Hampton of Computerworld said
+            that "many in-house blockchain solutions will be nothing more than cumbersome databases," and "without a
+            clear security model, proprietary blockchains should be eyed with suspicion."</p>
+        <hr>
+
+    </div>
+
+
+
+</body>
+
+</html>
